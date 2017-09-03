@@ -58,9 +58,6 @@
 		8959E7E81F4C28310025D57A /* ZYHTFileNameConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 8959E7E71F4C28310025D57A /* ZYHTFileNameConst.m */; };
 		8959E7E91F4C28310025D57A /* ZYHTFileNameConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 8959E7E71F4C28310025D57A /* ZYHTFileNameConst.m */; };
 		8959E7EA1F4C28310025D57A /* ZYHTFileNameConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 8959E7E71F4C28310025D57A /* ZYHTFileNameConst.m */; };
-		8959E7ED1F4C28BB0025D57A /* UIColor+LLHex.m in Sources */ = {isa = PBXBuildFile; fileRef = 8959E7EC1F4C28BB0025D57A /* UIColor+LLHex.m */; };
-		8959E7EE1F4C28BB0025D57A /* UIColor+LLHex.m in Sources */ = {isa = PBXBuildFile; fileRef = 8959E7EC1F4C28BB0025D57A /* UIColor+LLHex.m */; };
-		8959E7EF1F4C28BB0025D57A /* UIColor+LLHex.m in Sources */ = {isa = PBXBuildFile; fileRef = 8959E7EC1F4C28BB0025D57A /* UIColor+LLHex.m */; };
 		8959E7F41F4C3A220025D57A /* HistorySearchVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8959E7F31F4C3A220025D57A /* HistorySearchVC.m */; };
 		8959E7F51F4C3A220025D57A /* HistorySearchVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8959E7F31F4C3A220025D57A /* HistorySearchVC.m */; };
 		8959E7F61F4C3A220025D57A /* HistorySearchVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8959E7F31F4C3A220025D57A /* HistorySearchVC.m */; };
@@ -87,12 +84,21 @@
 		898714E51F4ACAFC00795527 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 898714E31F4ACAFC00795527 /* LaunchScreen.storyboard */; };
 		898714F01F4ACAFC00795527 /* LLSearchViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 898714EF1F4ACAFC00795527 /* LLSearchViewControllerTests.m */; };
 		898714FB1F4ACAFC00795527 /* LLSearchViewControllerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 898714FA1F4ACAFC00795527 /* LLSearchViewControllerUITests.m */; };
-		898715661F4AD07400795527 /* UIView+LLRect.m in Sources */ = {isa = PBXBuildFile; fileRef = 898715651F4AD07400795527 /* UIView+LLRect.m */; };
-		898715671F4AD07400795527 /* UIView+LLRect.m in Sources */ = {isa = PBXBuildFile; fileRef = 898715651F4AD07400795527 /* UIView+LLRect.m */; };
-		898715681F4AD07400795527 /* UIView+LLRect.m in Sources */ = {isa = PBXBuildFile; fileRef = 898715651F4AD07400795527 /* UIView+LLRect.m */; };
-		898715811F4AD2F200795527 /* LLSearchVCConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 898715801F4AD2F200795527 /* LLSearchVCConst.m */; };
-		898715821F4AD2F200795527 /* LLSearchVCConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 898715801F4AD2F200795527 /* LLSearchVCConst.m */; };
-		898715831F4AD2F200795527 /* LLSearchVCConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 898715801F4AD2F200795527 /* LLSearchVCConst.m */; };
+		89AC97C81F5BBCEF00E82952 /* BaseCommonSearchVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 89AC97C71F5BBCEF00E82952 /* BaseCommonSearchVC.m */; };
+		89AC97C91F5BBCEF00E82952 /* BaseCommonSearchVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 89AC97C71F5BBCEF00E82952 /* BaseCommonSearchVC.m */; };
+		89AC97CA1F5BBCEF00E82952 /* BaseCommonSearchVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 89AC97C71F5BBCEF00E82952 /* BaseCommonSearchVC.m */; };
+		89AC97D21F5BE59F00E82952 /* LLSearchVCConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 89AC97CD1F5BE59F00E82952 /* LLSearchVCConst.m */; };
+		89AC97D31F5BE59F00E82952 /* LLSearchVCConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 89AC97CD1F5BE59F00E82952 /* LLSearchVCConst.m */; };
+		89AC97D41F5BE59F00E82952 /* LLSearchVCConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 89AC97CD1F5BE59F00E82952 /* LLSearchVCConst.m */; };
+		89AC97D51F5BE59F00E82952 /* UIColor+LLHex.m in Sources */ = {isa = PBXBuildFile; fileRef = 89AC97CF1F5BE59F00E82952 /* UIColor+LLHex.m */; };
+		89AC97D61F5BE59F00E82952 /* UIColor+LLHex.m in Sources */ = {isa = PBXBuildFile; fileRef = 89AC97CF1F5BE59F00E82952 /* UIColor+LLHex.m */; };
+		89AC97D71F5BE59F00E82952 /* UIColor+LLHex.m in Sources */ = {isa = PBXBuildFile; fileRef = 89AC97CF1F5BE59F00E82952 /* UIColor+LLHex.m */; };
+		89AC97D81F5BE59F00E82952 /* UIView+LLRect.m in Sources */ = {isa = PBXBuildFile; fileRef = 89AC97D11F5BE59F00E82952 /* UIView+LLRect.m */; };
+		89AC97D91F5BE59F00E82952 /* UIView+LLRect.m in Sources */ = {isa = PBXBuildFile; fileRef = 89AC97D11F5BE59F00E82952 /* UIView+LLRect.m */; };
+		89AC97DA1F5BE59F00E82952 /* UIView+LLRect.m in Sources */ = {isa = PBXBuildFile; fileRef = 89AC97D11F5BE59F00E82952 /* UIView+LLRect.m */; };
+		89AC97DD1F5BFCD900E82952 /* LLTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89AC97DC1F5BFCD900E82952 /* LLTestViewController.m */; };
+		89AC97DE1F5BFCD900E82952 /* LLTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89AC97DC1F5BFCD900E82952 /* LLTestViewController.m */; };
+		89AC97DF1F5BFCD900E82952 /* LLTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89AC97DC1F5BFCD900E82952 /* LLTestViewController.m */; };
 		89CA87821F4C41B10011F1FE /* LLNaviSearchBaseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 89CA87811F4C41B10011F1FE /* LLNaviSearchBaseVC.m */; };
 		89CA87831F4C41B10011F1FE /* LLNaviSearchBaseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 89CA87811F4C41B10011F1FE /* LLNaviSearchBaseVC.m */; };
 		89CA87841F4C41B10011F1FE /* LLNaviSearchBaseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 89CA87811F4C41B10011F1FE /* LLNaviSearchBaseVC.m */; };
@@ -146,8 +152,6 @@
 		8959E7D41F4C23ED0025D57A /* LLTagViewUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLTagViewUtils.m; sourceTree = "<group>"; };
 		8959E7E61F4C28310025D57A /* ZYHTFileNameConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYHTFileNameConst.h; sourceTree = "<group>"; };
 		8959E7E71F4C28310025D57A /* ZYHTFileNameConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYHTFileNameConst.m; sourceTree = "<group>"; };
-		8959E7EB1F4C28BB0025D57A /* UIColor+LLHex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+LLHex.h"; sourceTree = "<group>"; };
-		8959E7EC1F4C28BB0025D57A /* UIColor+LLHex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+LLHex.m"; sourceTree = "<group>"; };
 		8959E7F21F4C3A220025D57A /* HistorySearchVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistorySearchVC.h; sourceTree = "<group>"; };
 		8959E7F31F4C3A220025D57A /* HistorySearchVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistorySearchVC.m; sourceTree = "<group>"; };
 		8959E7F71F4C3A560025D57A /* HistoryAndCategorySearchVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryAndCategorySearchVC.h; sourceTree = "<group>"; };
@@ -176,10 +180,16 @@
 		898714F61F4ACAFC00795527 /* LLSearchViewControllerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LLSearchViewControllerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		898714FA1F4ACAFC00795527 /* LLSearchViewControllerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LLSearchViewControllerUITests.m; sourceTree = "<group>"; };
 		898714FC1F4ACAFC00795527 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		898715641F4AD07400795527 /* UIView+LLRect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+LLRect.h"; sourceTree = "<group>"; };
-		898715651F4AD07400795527 /* UIView+LLRect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+LLRect.m"; sourceTree = "<group>"; };
-		8987157F1F4AD2F200795527 /* LLSearchVCConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLSearchVCConst.h; sourceTree = "<group>"; };
-		898715801F4AD2F200795527 /* LLSearchVCConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLSearchVCConst.m; sourceTree = "<group>"; };
+		89AC97C61F5BBCEF00E82952 /* BaseCommonSearchVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseCommonSearchVC.h; sourceTree = "<group>"; };
+		89AC97C71F5BBCEF00E82952 /* BaseCommonSearchVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseCommonSearchVC.m; sourceTree = "<group>"; };
+		89AC97CC1F5BE59F00E82952 /* LLSearchVCConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLSearchVCConst.h; sourceTree = "<group>"; };
+		89AC97CD1F5BE59F00E82952 /* LLSearchVCConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLSearchVCConst.m; sourceTree = "<group>"; };
+		89AC97CE1F5BE59F00E82952 /* UIColor+LLHex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+LLHex.h"; sourceTree = "<group>"; };
+		89AC97CF1F5BE59F00E82952 /* UIColor+LLHex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+LLHex.m"; sourceTree = "<group>"; };
+		89AC97D01F5BE59F00E82952 /* UIView+LLRect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+LLRect.h"; sourceTree = "<group>"; };
+		89AC97D11F5BE59F00E82952 /* UIView+LLRect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+LLRect.m"; sourceTree = "<group>"; };
+		89AC97DB1F5BFCD900E82952 /* LLTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLTestViewController.h; sourceTree = "<group>"; };
+		89AC97DC1F5BFCD900E82952 /* LLTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLTestViewController.m; sourceTree = "<group>"; };
 		89CA87801F4C41B10011F1FE /* LLNaviSearchBaseVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLNaviSearchBaseVC.h; sourceTree = "<group>"; };
 		89CA87811F4C41B10011F1FE /* LLNaviSearchBaseVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLNaviSearchBaseVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -212,7 +222,6 @@
 		8959E7891F4C238A0025D57A /* LLSearchViewControllerBase */ = {
 			isa = PBXGroup;
 			children = (
-				8959E7F01F4C29020025D57A /* Category */,
 				8959E78A1F4C238A0025D57A /* ExtensionPresenter */,
 				8959E78F1F4C238A0025D57A /* ExtensionView */,
 				8959E79B1F4C238A0025D57A /* SearchBar */,
@@ -297,6 +306,7 @@
 		8959E7CE1F4C23ED0025D57A /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				89AC97CB1F5BE59F00E82952 /* Category */,
 				8959E7D11F4C23ED0025D57A /* LLSearchHistorySaveUtils.h */,
 				8959E7D21F4C23ED0025D57A /* LLSearchHistorySaveUtils.m */,
 				8959E7D31F4C23ED0025D57A /* LLTagViewUtils.h */,
@@ -308,11 +318,11 @@
 		8959E7DE1F4C24A10025D57A /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				89AC97C51F5BBCE800E82952 /* Base */,
 				8959E7DF1F4C24B50025D57A /* CommonVC */,
 				8959E7E51F4C28210025D57A /* Const */,
 				8959E7E31F4C25430025D57A /* MainVC */,
 				8959E7E01F4C24CC0025D57A /* SearchVC */,
-				8959E7E21F4C25280025D57A /* Utils */,
 			);
 			path = Class;
 			sourceTree = "<group>";
@@ -322,10 +332,12 @@
 			children = (
 				8959E7261F4BFE350025D57A /* CategoryAndHistoryVC.h */,
 				8959E7271F4BFE350025D57A /* CategoryAndHistoryVC.m */,
-				8959E7301F4C12250025D57A /* HistoryAnimationVC.h */,
-				8959E7311F4C12250025D57A /* HistoryAnimationVC.m */,
+				89AC97DB1F5BFCD900E82952 /* LLTestViewController.h */,
+				89AC97DC1F5BFCD900E82952 /* LLTestViewController.m */,
 				8959E72B1F4BFE5E0025D57A /* HistoryVC.h */,
 				8959E72C1F4BFE5E0025D57A /* HistoryVC.m */,
+				8959E7301F4C12250025D57A /* HistoryAnimationVC.h */,
+				8959E7311F4C12250025D57A /* HistoryAnimationVC.m */,
 				898714DB1F4ACAFC00795527 /* ViewController.h */,
 				898714DC1F4ACAFC00795527 /* ViewController.m */,
 				898714DE1F4ACAFC00795527 /* Main.storyboard */,
@@ -359,13 +371,6 @@
 			path = Presenter;
 			sourceTree = "<group>";
 		};
-		8959E7E21F4C25280025D57A /* Utils */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Utils;
-			sourceTree = "<group>";
-		};
 		8959E7E31F4C25430025D57A /* MainVC */ = {
 			isa = PBXGroup;
 			children = (
@@ -391,19 +396,6 @@
 				8959E7E71F4C28310025D57A /* ZYHTFileNameConst.m */,
 			);
 			path = Const;
-			sourceTree = "<group>";
-		};
-		8959E7F01F4C29020025D57A /* Category */ = {
-			isa = PBXGroup;
-			children = (
-				8987157F1F4AD2F200795527 /* LLSearchVCConst.h */,
-				898715801F4AD2F200795527 /* LLSearchVCConst.m */,
-				8959E7EB1F4C28BB0025D57A /* UIColor+LLHex.h */,
-				8959E7EC1F4C28BB0025D57A /* UIColor+LLHex.m */,
-				898715641F4AD07400795527 /* UIView+LLRect.h */,
-				898715651F4AD07400795527 /* UIView+LLRect.m */,
-			);
-			path = Category;
 			sourceTree = "<group>";
 		};
 		898714C91F4ACAFC00795527 = {
@@ -463,6 +455,28 @@
 				898714FA1F4ACAFC00795527 /* LLSearchViewControllerUITests.m */,
 			);
 			path = LLSearchViewControllerUITests;
+			sourceTree = "<group>";
+		};
+		89AC97C51F5BBCE800E82952 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				89AC97C61F5BBCEF00E82952 /* BaseCommonSearchVC.h */,
+				89AC97C71F5BBCEF00E82952 /* BaseCommonSearchVC.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		89AC97CB1F5BE59F00E82952 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				89AC97CC1F5BE59F00E82952 /* LLSearchVCConst.h */,
+				89AC97CD1F5BE59F00E82952 /* LLSearchVCConst.m */,
+				89AC97CE1F5BE59F00E82952 /* UIColor+LLHex.h */,
+				89AC97CF1F5BE59F00E82952 /* UIColor+LLHex.m */,
+				89AC97D01F5BE59F00E82952 /* UIView+LLRect.h */,
+				89AC97D11F5BE59F00E82952 /* UIView+LLRect.m */,
+			);
+			path = Category;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -615,7 +629,7 @@
 			files = (
 				898714DD1F4ACAFC00795527 /* ViewController.m in Sources */,
 				8959E8211F4C3B6D0025D57A /* HistoryAndCategorySearchHistroyViewP.m in Sources */,
-				8959E7ED1F4C28BB0025D57A /* UIColor+LLHex.m in Sources */,
+				89AC97D81F5BE59F00E82952 /* UIView+LLRect.m in Sources */,
 				8959E82B1F4C3F0C0025D57A /* TagTypeModel.m in Sources */,
 				898714DA1F4ACAFC00795527 /* AppDelegate.m in Sources */,
 				8959E7321F4C12250025D57A /* HistoryAnimationVC.m in Sources */,
@@ -623,21 +637,23 @@
 				89CA87821F4C41B10011F1FE /* LLNaviSearchBaseVC.m in Sources */,
 				8959E7AD1F4C238A0025D57A /* NBSSearchShopCategoryView.m in Sources */,
 				8959E7C81F4C238A0025D57A /* LLNaviSearchHistorySaveBasePresenter.m in Sources */,
+				89AC97C81F5BBCEF00E82952 /* BaseCommonSearchVC.m in Sources */,
+				89AC97D51F5BE59F00E82952 /* UIColor+LLHex.m in Sources */,
 				8959E7C21F4C238A0025D57A /* LLSearchBar.m in Sources */,
 				8959E7281F4BFE350025D57A /* CategoryAndHistoryVC.m in Sources */,
 				8959E7E81F4C28310025D57A /* ZYHTFileNameConst.m in Sources */,
+				89AC97D21F5BE59F00E82952 /* LLSearchVCConst.m in Sources */,
 				8959E7DB1F4C23ED0025D57A /* LLTagViewUtils.m in Sources */,
 				8959E7AA1F4C238A0025D57A /* NBSSearchShopCategoryViewCellP.m in Sources */,
 				8959E7B31F4C238A0025D57A /* LLSearchResultListView.m in Sources */,
-				898715661F4AD07400795527 /* UIView+LLRect.m in Sources */,
 				8959E7F41F4C3A220025D57A /* HistorySearchVC.m in Sources */,
 				8959E7F91F4C3A560025D57A /* HistoryAndCategorySearchVC.m in Sources */,
+				89AC97DD1F5BFCD900E82952 /* LLTestViewController.m in Sources */,
 				898714D71F4ACAFC00795527 /* main.m in Sources */,
 				8959E72D1F4BFE5E0025D57A /* HistoryVC.m in Sources */,
 				8959E81C1F4C3B560025D57A /* HistoryAndCategorySearchCategoryViewP.m in Sources */,
 				8959E7B01F4C238A0025D57A /* NBSSearchShopHistoryView.m in Sources */,
 				8959E8261F4C3B780025D57A /* HistorySearchHistroyViewP.m in Sources */,
-				898715811F4AD2F200795527 /* LLSearchVCConst.m in Sources */,
 				8959E7D81F4C23ED0025D57A /* LLSearchHistorySaveUtils.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -646,28 +662,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				898715671F4AD07400795527 /* UIView+LLRect.m in Sources */,
 				8959E7C91F4C238A0025D57A /* LLNaviSearchHistorySaveBasePresenter.m in Sources */,
 				8959E7B11F4C238A0025D57A /* NBSSearchShopHistoryView.m in Sources */,
 				8959E7E91F4C28310025D57A /* ZYHTFileNameConst.m in Sources */,
 				8959E72E1F4BFE5E0025D57A /* HistoryVC.m in Sources */,
 				8959E7C61F4C238A0025D57A /* LLSearchNaviBarView.m in Sources */,
 				8959E82C1F4C3F0C0025D57A /* TagTypeModel.m in Sources */,
-				898715821F4AD2F200795527 /* LLSearchVCConst.m in Sources */,
 				8959E7F51F4C3A220025D57A /* HistorySearchVC.m in Sources */,
 				8959E7291F4BFE350025D57A /* CategoryAndHistoryVC.m in Sources */,
 				8959E8221F4C3B6D0025D57A /* HistoryAndCategorySearchHistroyViewP.m in Sources */,
 				898714F01F4ACAFC00795527 /* LLSearchViewControllerTests.m in Sources */,
 				8959E7DC1F4C23ED0025D57A /* LLTagViewUtils.m in Sources */,
 				8959E7FA1F4C3A560025D57A /* HistoryAndCategorySearchVC.m in Sources */,
+				89AC97C91F5BBCEF00E82952 /* BaseCommonSearchVC.m in Sources */,
 				8959E7B41F4C238A0025D57A /* LLSearchResultListView.m in Sources */,
 				8959E7D91F4C23ED0025D57A /* LLSearchHistorySaveUtils.m in Sources */,
+				89AC97D61F5BE59F00E82952 /* UIColor+LLHex.m in Sources */,
+				89AC97DE1F5BFCD900E82952 /* LLTestViewController.m in Sources */,
 				8959E7331F4C12250025D57A /* HistoryAnimationVC.m in Sources */,
 				8959E8271F4C3B780025D57A /* HistorySearchHistroyViewP.m in Sources */,
 				8959E7C31F4C238A0025D57A /* LLSearchBar.m in Sources */,
 				8959E7AE1F4C238A0025D57A /* NBSSearchShopCategoryView.m in Sources */,
+				89AC97D91F5BE59F00E82952 /* UIView+LLRect.m in Sources */,
+				89AC97D31F5BE59F00E82952 /* LLSearchVCConst.m in Sources */,
 				8959E81D1F4C3B560025D57A /* HistoryAndCategorySearchCategoryViewP.m in Sources */,
-				8959E7EE1F4C28BB0025D57A /* UIColor+LLHex.m in Sources */,
 				89CA87831F4C41B10011F1FE /* LLNaviSearchBaseVC.m in Sources */,
 				8959E7AB1F4C238A0025D57A /* NBSSearchShopCategoryViewCellP.m in Sources */,
 			);
@@ -677,28 +695,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				898715681F4AD07400795527 /* UIView+LLRect.m in Sources */,
 				8959E7CA1F4C238A0025D57A /* LLNaviSearchHistorySaveBasePresenter.m in Sources */,
 				8959E7B21F4C238A0025D57A /* NBSSearchShopHistoryView.m in Sources */,
 				8959E7EA1F4C28310025D57A /* ZYHTFileNameConst.m in Sources */,
 				8959E72F1F4BFE5E0025D57A /* HistoryVC.m in Sources */,
 				8959E7C71F4C238A0025D57A /* LLSearchNaviBarView.m in Sources */,
 				8959E82D1F4C3F0C0025D57A /* TagTypeModel.m in Sources */,
-				898715831F4AD2F200795527 /* LLSearchVCConst.m in Sources */,
 				8959E7F61F4C3A220025D57A /* HistorySearchVC.m in Sources */,
 				8959E72A1F4BFE350025D57A /* CategoryAndHistoryVC.m in Sources */,
 				8959E8231F4C3B6D0025D57A /* HistoryAndCategorySearchHistroyViewP.m in Sources */,
 				898714FB1F4ACAFC00795527 /* LLSearchViewControllerUITests.m in Sources */,
 				8959E7DD1F4C23ED0025D57A /* LLTagViewUtils.m in Sources */,
 				8959E7FB1F4C3A560025D57A /* HistoryAndCategorySearchVC.m in Sources */,
+				89AC97CA1F5BBCEF00E82952 /* BaseCommonSearchVC.m in Sources */,
 				8959E7B51F4C238A0025D57A /* LLSearchResultListView.m in Sources */,
 				8959E7DA1F4C23ED0025D57A /* LLSearchHistorySaveUtils.m in Sources */,
+				89AC97D71F5BE59F00E82952 /* UIColor+LLHex.m in Sources */,
+				89AC97DF1F5BFCD900E82952 /* LLTestViewController.m in Sources */,
 				8959E7341F4C12250025D57A /* HistoryAnimationVC.m in Sources */,
 				8959E8281F4C3B780025D57A /* HistorySearchHistroyViewP.m in Sources */,
 				8959E7C41F4C238A0025D57A /* LLSearchBar.m in Sources */,
 				8959E7AF1F4C238A0025D57A /* NBSSearchShopCategoryView.m in Sources */,
+				89AC97DA1F5BE59F00E82952 /* UIView+LLRect.m in Sources */,
+				89AC97D41F5BE59F00E82952 /* LLSearchVCConst.m in Sources */,
 				8959E81E1F4C3B560025D57A /* HistoryAndCategorySearchCategoryViewP.m in Sources */,
-				8959E7EF1F4C28BB0025D57A /* UIColor+LLHex.m in Sources */,
 				89CA87841F4C41B10011F1FE /* LLNaviSearchBaseVC.m in Sources */,
 				8959E7AC1F4C238A0025D57A /* NBSSearchShopCategoryViewCellP.m in Sources */,
 			);

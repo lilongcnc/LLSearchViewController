@@ -10,6 +10,8 @@
 
 @interface HistorySearchVC : LLNaviSearchBaseVC
 
+
+ //FIXME:也可以在这里实现搜索页面相关方法!!!
 - (void)setSearchMethod;
 
 @end

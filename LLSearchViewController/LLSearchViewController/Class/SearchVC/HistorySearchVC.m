@@ -23,10 +23,6 @@
     //告诉只显示历史搜索界面
     self.isOnlyShowHistoryView = YES;
     
-    
-    
-    
-    
     [super viewDidLoad];
 }
 
@@ -42,6 +38,15 @@
             self.resultListArray = @[@"春天", @"秋田", @"夏天-C", @"冬天"];
         });
     }];
-
 }
+
+
+
+
+
+-(void)dealloc
+{
+    NSLog(@"HistorySearchVC 页面销毁");
+}
+
 @end

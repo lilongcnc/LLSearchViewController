@@ -9,6 +9,7 @@
 #import "HistoryAndCategorySearchVC.h"
 #import "HistoryAndCategorySearchHistroyViewP.h"
 #import "HistoryAndCategorySearchCategoryViewP.h"
+#import "LLSearchVCConst.h"
 
 @interface HistoryAndCategorySearchVC ()
 
@@ -28,6 +29,10 @@
 }
 
 
+-(void)dealloc
+{
+    NSLog(@"HistoryAndCategorySearchVC 页面销毁");
+}
 
 
 @end

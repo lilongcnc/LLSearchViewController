@@ -34,18 +34,16 @@ typedef void (^searchBarDidChangeBlock)(NaviBarSearchType searchType, LLSearchBa
 /*----------------------------------------------------------------
  *                          接口方法                               *
  -----------------------------------------------------------------*/
-
-
 /**
  搜索条的文字
  */
 @property (nonatomic,copy) NSString *searchBarText;
 
-
 /**
  即时搜索匹配框,匹配的数据列表
  */
 @property (nonatomic,strong) NSArray<NSString *> *resultListArray;
+
 /**
  搜索框:用户即时输入完毕
  
@@ -58,21 +56,12 @@ typedef void (^searchBarDidChangeBlock)(NaviBarSearchType searchType, LLSearchBa
  */
 - (void)resultListViewDidSelectedIndex:(resultListViewCellDidClickBlock)cellDidClickBlock;
 
-
-
-
-
 /**
  点击键盘"搜索"按钮或者历史标签
  
  @param beginSearchBlock 搜索数据
  */
 - (void)beginSearch:(beginSearchBlock)beginSearchBlock;
-
-
-
-
-
 
 /**
  是否只显示历史记录模
@@ -86,13 +75,10 @@ typedef void (^searchBarDidChangeBlock)(NaviBarSearchType searchType, LLSearchBa
 
 
 
-
-
-
-
 /*----------------------------------------------------------------
  *                          对子类抛出的属性                         *
  -----------------------------------------------------------------*/
+
 @property (nonatomic,strong) UIScrollView *myBGScrollView;
 
 

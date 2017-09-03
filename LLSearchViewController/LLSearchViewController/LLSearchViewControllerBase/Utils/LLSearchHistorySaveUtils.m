@@ -7,6 +7,7 @@
 //
 
 #import "LLSearchHistorySaveUtils.h"
+#import "LLSearchVCConst.h"
 //#import "ZYHTHistoryDataSaveUtils.h"
 
 
@@ -86,7 +87,7 @@
     }
     
     //返回结果
-    !complete ? : complete(saveFlag);
+    LLBLOCK_EXEC(complete,saveFlag);
 }
 
 
@@ -101,7 +102,8 @@
     }
     
     //返回结果
-    !complete ? : complete(dealFlag);
+    LLBLOCK_EXEC(complete,dealFlag);
+
 }
 
 

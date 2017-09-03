@@ -7,6 +7,7 @@
 //
 
 #import "LLNaviSearchHistorySaveBasePresenter.h"
+#import "LLSearchVCConst.h"
 
 @implementation LLNaviSearchHistorySaveBasePresenter
 
@@ -35,7 +36,7 @@
 
 
 - (void)fetchAndHaveSearchCache:(dealCompleteBlock)complete {
-    !complete? : complete([self.saveUtils getSearchCache].count);
+    LLBLOCK_EXEC(complete,[self.saveUtils getSearchCache].count);
 }
 
 

@@ -6,8 +6,8 @@
 //  Copyright © 2017年 李龙. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "BaseCommonSearchVC.h"
 
-@interface HistoryAnimationVC : UIViewController
+@interface HistoryAnimationVC : BaseCommonSearchVC
 
 @end

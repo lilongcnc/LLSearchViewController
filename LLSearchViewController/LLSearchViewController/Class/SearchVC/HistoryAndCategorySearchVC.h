@@ -7,7 +7,11 @@
 //
 
 #import "LLNaviSearchBaseVC.h"
+@class HistoryAndCategorySearchVC;
+
 
 @interface HistoryAndCategorySearchVC : LLNaviSearchBaseVC
+
+
 
 @end

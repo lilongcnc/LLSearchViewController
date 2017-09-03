@@ -67,6 +67,7 @@
     if (!_isOnlyShowHistoryView) {
         //开始获取数据
         [self.shopCategoryP fetchCategotyTypeData:^(NSError *error, id result) {
+            @LLStrongObj(self);
             if(!error)
                 [self setupShopCategory];
             else
@@ -302,6 +303,12 @@
 - (void)resultListViewDidSelectedIndex:(resultListViewCellDidClickBlock)cellDidClickBlock
 {
     _myCellDidClickBlock = cellDidClickBlock;
+}
+
+
+-(void)dealloc
+{
+    NSLog(@"LLNaviSearchBaseVC 页面销毁");
 }
 
 @end

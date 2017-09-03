@@ -22,9 +22,7 @@
     self.view.backgroundColor = [UIColor whiteColor];
     self.navigationController.navigationBar.hidden = YES;
     
-    
     [self creatSearchNaviBar];
-    
 }
 
 
@@ -32,14 +30,14 @@
     LLSearchNaviBarView *searchNaviBarView = [LLSearchNaviBarView new];
     searchNaviBarView.searbarPlaceHolder = @"请输入搜索关键词";
     
+    @LLWeakObj(self);
     [searchNaviBarView showbackBtnWith:[UIImage imageNamed:@"navi_back_w"] onClick:^(UIButton *btn) {
+        @LLStrongObj(self);
         [self.navigationController popViewControllerAnimated:YES];
     }];
     
-    @LLWeakObj(self);
     [searchNaviBarView setSearchBarBeignOnClickBlock:^{
         @LLStrongObj(self);
-        
         HistorySearchVC *searShopVC = [HistorySearchVC new];
         //在HistroySearchVC 中实现方法
         [searShopVC setSearchMethod];
@@ -49,4 +47,9 @@
     [self.view addSubview:searchNaviBarView];
 }
 
+
+
+-(void)dealloc{
+    NSLog(@"HistoryAnimationVC 页面销毁");
+}
 @end

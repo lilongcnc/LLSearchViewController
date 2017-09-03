@@ -39,10 +39,45 @@
 /*----------------------------------------------------------------------------------
  *                      Block/Block-weak-strong避免循环引用                                *
  ----------------------------------------------------------------------------------*/
-// 避免宏循环引用
-#define LLWeakObj(o) autoreleasepool{} __weak typeof(o) o##Weak = o;
-#define LLStrongObj(o) autoreleasepool{} __strong typeof(o) o = o##Weak;
 #define LLBLOCK_EXEC(block, ...) if (block) { block(__VA_ARGS__); }
+
+//#define LLWeakObj(o) autoreleasepool{} __weak typeof(o) o##Weak = o;
+//#define LLStrongObj(o) autoreleasepool{} __strong typeof(o) o = o##Weak;
+
+// 避免宏循环引用
+#ifndef LLWeakObj
+#if DEBUG
+#if __has_feature(objc_arc)
+#define LLWeakObj(object) autoreleasepool{} __weak __typeof__(object) weak##_##object = object;
+#else
+#define LLWeakObj(object) autoreleasepool{} __block __typeof__(object) block##_##object = object;
+#endif
+#else
+#if __has_feature(objc_arc)
+#define LLWeakObj(object) try{} @finally{} {} __weak __typeof__(object) weak##_##object = object;
+#else
+#define LLWeakObj(object) try{} @finally{} {} __block __typeof__(object) block##_##object = object;
+#endif
+#endif
+#endif
+
+#ifndef LLStrongObj
+#if DEBUG
+#if __has_feature(objc_arc)
+#define LLStrongObj(object) autoreleasepool{} __typeof__(object) object = weak##_##object;
+#else
+#define LLStrongObj(object) autoreleasepool{} __typeof__(object) object = block##_##object;
+#endif
+#else
+#if __has_feature(objc_arc)
+#define LLStrongObj(object) try{} @finally{} __typeof__(object) object = weak##_##object;
+#else
+#define LLStrongObj(object) try{} @finally{} __typeof__(object) object = block##_##object;
+#endif
+#endif
+#endif
+
+
 
 
 

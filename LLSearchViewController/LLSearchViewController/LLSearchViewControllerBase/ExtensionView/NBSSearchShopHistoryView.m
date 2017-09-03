@@ -78,12 +78,6 @@ static CGFloat shopCategoryViewNotOpenHeight = 0;//分类模块未展开时的�
 
 - (void)initialization
 {
-    
-    //设置背景色
-    //        self.backgroundColor = ZYHTBaseColorOfBackgorundView;
-//    self.backgroundColor = [UIColor yellowColor];
-    
-    
     //初始化计量值
     leadPadding = 13;
     trailPadding = 13;
@@ -123,7 +117,6 @@ static CGFloat shopCategoryViewNotOpenHeight = 0;//分类模块未展开时的�
 {
     if (!_coverView) {
         UIView *view = [[UIView alloc] initWithFrame:(CGRect){0,0,shopCategoryCoverViewWidth,0}];
-//        view.backgroundColor = [UIColor clearColor];
         view.clipsToBounds = YES;
         _coverView = view;
     }
@@ -178,7 +171,7 @@ static CGFloat shopCategoryViewNotOpenHeight = 0;//分类模块未展开时的�
     tagViewUtils.commonTagStyle = ZYHTCommonTagStyleNormalWhiteTag;
     
     [tagViewUtils tagLabelOnClick:^(UITapGestureRecognizer *tapGes, UILabel *tagLabel) {
-        !_myOnCickBlock ? :_myOnCickBlock(tagLabel);
+        LLBLOCK_EXEC(_myOnCickBlock,tagLabel);
     }];
 }
 
@@ -188,7 +181,7 @@ static CGFloat shopCategoryViewNotOpenHeight = 0;//分类模块未展开时的�
 //---------------------------------------------------------------------------------------------------
 - (void)clearAllHistoryData
 {
-    !self.clearHistoryBtnOnClick ? : self.clearHistoryBtnOnClick();
+    LLBLOCK_EXEC(self.clearHistoryBtnOnClick);
 }
 
 

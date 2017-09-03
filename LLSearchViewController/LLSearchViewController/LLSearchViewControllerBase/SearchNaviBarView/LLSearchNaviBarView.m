@@ -142,13 +142,13 @@
 //---------------------------------------------------------------------------------------------------
 - (BOOL)searchBarShouldBeginEditing:(LLSearchBar *)searchBar
 {
-    !_searchBarBeignOnClickBlock ? : _searchBarBeignOnClickBlock();
+    LLBLOCK_EXEC(_searchBarBeignOnClickBlock);
     return YES;
 }
 
 - (void)searchBarSearchButtonClicked:(LLSearchBar *)searchBar
 {
-    !_keyBoardSearchBtnBlock ? : _keyBoardSearchBtnBlock(searchBar);
+    LLBLOCK_EXEC(_keyBoardSearchBtnBlock,searchBar);
 }
 
 - (void)searchBar:(LLSearchBar *)searchBar textDidChange:(NSString *)searchText
@@ -162,7 +162,7 @@
 //---------------------------------------------------------------------------------------------------
 - (void)rightOneBtnOnCkick:(UIButton *)btn
 {
-    !_rightBtnBlock ? :_rightBtnBlock(btn);
+    LLBLOCK_EXEC(_rightBtnBlock,btn);
 }
 
 
@@ -190,7 +190,7 @@
 
 - (void)backBtnOnCLick:(UIButton *)btn
 {
-    !_backBtnBlock ? :_backBtnBlock(btn);
+    LLBLOCK_EXEC(_backBtnBlock,btn);
 }
 
 

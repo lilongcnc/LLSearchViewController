@@ -79,12 +79,6 @@ static CGFloat shopCategoryViewOpenHeight = 0;//展开时的高度
 
 - (void)initialization
 {
-    
-    //设置背景色
-    //        self.backgroundColor = ZYHTBaseColorOfBackgorundView;
-//    self.backgroundColor = [UIColor cyanColor];
-    
-    
     //初始化计量值
     leadPadding = 13;
     trailPadding = 13;
@@ -132,7 +126,7 @@ static CGFloat shopCategoryViewOpenHeight = 0;//展开时的高度
     
     
     //通知高度更新
-    !self.modifyFrameBlock?:self.modifyFrameBlock(self.frame);
+    LLBLOCK_EXEC(self.modifyFrameBlock,self.frame);
 }
 
 
@@ -189,10 +183,6 @@ static CGFloat shopCategoryViewOpenHeight = 0;//展开时的高度
     tagViewUtils = [LLTagViewUtils new];
     [tagViewUtils setupRectangleTagsInView:self.coverView tagTexts:[self.shopCategoryViewP allCategotyTypeTitles] maxColumnNum:4 tagHeight:33];
     
-    /*
-     rowNumber = [LLTools getRowNumberWithTotalCount:(int)self.shopCategoryViewP.allCategotyTypeData.count columnNumber:columnShowNumber];
-     categoryViewHeight = rowNumber*categoryTagViewHeight;
-    */
     categoryViewHeight = self.coverView.height;
     
     @LLWeakObj(self);
@@ -201,7 +191,7 @@ static CGFloat shopCategoryViewOpenHeight = 0;//展开时的高度
 //        NSLog(@"%s-->%@--->%zd",__FUNCTION__,tagLabel.text,tagLabel.tag);
         if (tagLabel.tag <= self.shopCategoryViewP.allCategotyTypeData.count) {
             NBSSearchShopCategoryViewCellP *cellP = self.shopCategoryViewP.allCategotyTypeData[tagLabel.tag];
-            !_myOnCickBlock ? :_myOnCickBlock(cellP);
+            LLBLOCK_EXEC(_myOnCickBlock,cellP);
         }
 
     }];

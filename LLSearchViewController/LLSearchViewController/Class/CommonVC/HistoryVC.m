@@ -21,6 +21,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
     self.view.backgroundColor = [UIColor whiteColor];
     self.navigationController.navigationBar.hidden = YES;
  
@@ -34,36 +35,52 @@
     LLSearchNaviBarView *searchNaviBarView = [LLSearchNaviBarView new];
     searchNaviBarView.searbarPlaceHolder = @"请输入搜索关键词";
     
+
+    @LLWeakObj(self);
     [searchNaviBarView showbackBtnWith:[UIImage imageNamed:@"navi_back_w"] onClick:^(UIButton *btn) {
+        @LLStrongObj(self);
         [self.navigationController popViewControllerAnimated:YES];
     }];
     
-    @LLWeakObj(self);
+
     [searchNaviBarView setSearchBarBeignOnClickBlock:^{
         @LLStrongObj(self);
         
         HistorySearchVC *searShopVC = [HistorySearchVC new];
+
+        
+        @LLWeakObj(searShopVC);
         //(1)点击分类 (2)用户点击键盘"搜索"按钮  (3)点击历史搜索记录
         [searShopVC beginSearch:^(NaviBarSearchType searchType,NBSSearchShopCategoryViewCellP *categorytagP,UILabel *historyTagLabel,LLSearchBar *searchBar) {
-            
+            @LLStrongObj(searShopVC);
+
             NSLog(@"historyTagLabel:%@--->searchBar:%@--->categotyTitle:%@--->%@",historyTagLabel.text,searchBar.text,categorytagP.categotyTitle,categorytagP.categotyID);
             
             searShopVC.searchBarText = @"你选择的搜索内容显示到这里";
         }];
+        
+        
         //执行即时搜索匹配
-        NSArray *tempArray =  @[@"Java", @"Python"];
+        NSArray *tempArray = @[@"Java", @"Python"];
+
+        
         [searShopVC searchbarDidChange:^(NaviBarSearchType searchType, LLSearchBar *searchBar, NSString *searchText) {
+            @LLStrongObj(searShopVC);
+
             //FIXME:这里模拟网络请求数据!!!
             dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.1f * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
                 searShopVC.resultListArray = tempArray;
             });
         }];
+        
         [self.navigationController presentViewController:searShopVC animated:nil completion:nil];
     }];
     
     [self.view addSubview:searchNaviBarView];
 }
 
-
+-(void)dealloc{
+    NSLog(@"HistoryVC 页面销毁");
+}
 
 @end
