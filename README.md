@@ -79,6 +79,11 @@
     - (void)resultListViewDidSelectedIndex:(resultListViewCellDidClickBlock)cellDidClickBlock;
 
 
+
+### 内存泄露检测
+
+因为我没有采用代理的方法，而是采用的bloc.开始第一版有些地方weakSelf并没有写全，导致了泄露问题，结合MLeaksFinder和Instruments进行了修复,但是使用MLeaksFinder 在 dealloc 方法已经执行了,还会报错内存泄露, 而Instruments 的 call tree 没有内容,有偶尔情况会全部报绿色对勾说没有泄露,不知道什么原因. 如果有朋友有好的检测内存泄露的方法,一定也告诉我下,我也学习下! 感谢提出内存泄露这个问题的朋友!
+
 最后, 下面几个控制器调用的地方,提供了部分搜索页面接口展示:
 ![LLSearchViewControllerBase结构说明](http://www.lilongcnc.cc/lauren_picture/20170822/4.png)
 
